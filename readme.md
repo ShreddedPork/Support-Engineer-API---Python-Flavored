@@ -42,7 +42,7 @@ pip3 install shippo
 access_token = "<INSERT TEST TOKEN HERE>"
 ```
 
-### In order to test the routes, we'll rely on 5 simple commands. 
+### API Commands/Descriptions
 
 * this command will create a shipment
 * Note - This shipment is created with the JSON object sampleShipment. Feel free to plug your own JSON file in here
@@ -60,19 +60,20 @@ python3 retrieve-shipment.py <INSERT SHIPMENT object_id HERE>
 python3 retrieve-rates.py <INSERT SHIPMENT object_id HERE>
 ```
 
-## Commands for retrieving addresses and parcels
-
-
 * this command takes in the shipment object_id / address object_id and the keyword "Shipment" / "Address" and returns both sender and recipient addresses, or the address of the sender/recipient respectively
 ```
-python3 retrieve-address.py <INSERT SHIPMENT object_id AND "Shipment">
-python3 retrieve-address.py <INSERT ADDRESS object_id AND "Address">
+python3 retrieve-address.py <INSERT SHIPMENT object_id> <"Shipment">
+python3 retrieve-address.py <INSERT ADDRESS object_id> <"Address">
+
+Ex. python3 retrieve-address.py 12345 Shipment
 ```
 
 * this command takes in either the parcel object_id / shipment object_id and the keyword "Shipment" / "Parcel" and returns the associated parcel
 ```
-python3 retrieve-parcel.py <INSERT SHIPMENT object_id AND "Shipment">
-python3 retrieve-parcel.py <INSERT PARCEL object_id AND "Parcel">
+python3 retrieve-parcel.py <INSERT SHIPMENT object_id> <"Shipment">
+python3 retrieve-parcel.py <INSERT PARCEL object_id> <"Parcel">
+
+Ex. python3 retrieve-parcel.py 12345 Parcel
 ```
 
 ## Authors 
