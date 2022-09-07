@@ -2,7 +2,12 @@
 
 ## Description
 
-A simple tool that allows users to access the shippo API. A user can create a shipment, retrieve a shipment, retrieve rates for a specific shipment, retrieve addresses associated with the shipment, and retrieve the parcels associated with a shipment.
+A simple tool that allows users to access the shippo API. A user can 
+* create a shipment
+* retrieve a shipment 
+* retrieve rates for a specific shipment
+* retrieve addresses associated with the shipment, 
+* retrieve the parcels associated with a shipment.
 
 ## Getting Started
 
