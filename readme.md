@@ -38,6 +38,7 @@ pip3 install shippo
 
 ## Executing program
 * In order to be able to run the program, you will need to create your own config.py file and paste this line of code as follows replacing the brackets with your own token. 
+* Place your config file in the root directory
 ```
 access_token = "<INSERT TEST TOKEN HERE>"
 ```
